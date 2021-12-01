@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Array</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" charset="UTF-8" defer></script>
+    </head>
+
+    <body>
+        <header></header>
+
+        <main>
+            <form id="inputDataForm">
+
+                <fieldset id="inputDataForm-inputFields">
+                    <legend>Entrada de valores na estrutura</legend>
+
+                    <label for="inputDataForm-number1">digite um número entre 0 e 999:</label>
+                    <input type="number" id="inputDataForm-number1" value="0" maxlength="3" min="0" max="999" step="1" />
+                    
+                    <label for="inputDataForm-number2">digite um número entre 0 e 999:</label>
+                    <input type="number" id="inputDataForm-number2" value="0" maxlength="3" min="0" max="999" step="1" />
+                    
+                    <label for="inputDataForm-number3">digite um número entre 0 e 999:</label>
+                    <input type="number" id="inputDataForm-number3" value="0" maxlength="3" min="0" max="999" step="1" />
+                    
+                    <label for="inputDataForm-number4">digite um número entre 0 e 999:</label>
+                    <input type="number" id="inputDataForm-number4" value="0" maxlength="3" min="0" max="999" step="1" />
+                    
+                    <button type="button" id="inputDataForm-storeButton">lembrar</button>
+                </fieldset>
+
+                <output id="inputDataForm-memoryOutput" for="inputDataForm-storeButton">aaa</output>
+                
+                <fieldset id="inputDataForm-arrayChangingOperations">
+                    <legend>Modificadores de estrutura</legend>
+                    <button type="button" id="inputDataForm-invertButton">inverter</button>
+                    <button type="button" id="inputDataForm-orderButton">ordenar</button>
+                </fieldset>
+                
+                <output id="inputDataForm-operationsOutput" for="inputDataForm-invertButton inputDataForm-orderButton">bbb</output>
+            </form>
+        </main>
+    </body>
+</html>
