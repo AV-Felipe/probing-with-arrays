@@ -66,12 +66,17 @@ function invertMainArray() {
 }
 
 function sortElements() {
+    outputOperations.innerHTML = "";
+
     let orderedArray =[...mainArray];
 
     let temp = [...mainArray];
     orderedArray = sortArray(temp);
 
-    console.log(orderedArray);
+    orderedArray.forEach(a => {
+        outputOperations.innerHTML += a;
+    });
+    //outputOperations.innerHTML = orderedArray;
 }
 
 function sortArray(arrayToSort){

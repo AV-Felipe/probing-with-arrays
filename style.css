@@ -1,0 +1,50 @@
+html { 
+    font-size: 100%;
+}
+
+main {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.displayClass {
+    border: 1px solid black;
+    width: 9.375rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;
+    font-weight: bold;
+}
+
+#inputDataForm-arrayChangingOperations {
+    justify-content: center;
+}
+
+label {
+    margin: 5px;
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+}
+
+#inputDataForm-storeButton {
+    width: 100%;
+}
+
+button {
+    margin: 15px;
+}
+
