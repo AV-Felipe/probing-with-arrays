@@ -37,7 +37,8 @@ function sendToMemory() {
     //validate values and push then into array
     for (i = 0; i < 4; i++) {
         if(inputFieldsGroup[i].value < 0 || inputFieldsGroup[i].value > 999){
-            inputFieldsGroup[i].vaule = "0<=x<=999";
+            inputFieldsGroup[i].vaule = 0;
+            outputMain.innerHTML = "Escolha apenas valores entre 0 e 999"
             i = 4;
         }else{
             mainArray.push(inputFieldsGroup[i].value * 1);
@@ -65,12 +66,18 @@ function invertMainArray() {
 }
 
 function sortElements() {
-    let orderedArray =[0, 0, 0, 0];
-    //let a, b, c, d;
-    //[a, b, c, d] = mainArray;
+    let orderedArray =[...mainArray];
 
     let temp = [...mainArray];
+    orderedArray = sortArray(temp);
 
+    console.log(orderedArray);
+}
+
+function sortArray(arrayToSort){
+    let result = [...arrayToSort];
+    let mainCounter = 0;
+    let temp = [...arrayToSort];
     for(a = 0; a < temp.length; a++){
         let cacheArray = [...temp];
         for(b = 0; b < temp.length; b++){
@@ -82,8 +89,9 @@ function sortElements() {
             }
         }
     }
-    console.log(temp);
-
-
-    
+    for(i = temp.length - 1; i >= 0; i--){
+        result[i] = temp[mainCounter];
+        mainCounter++;
+    }
+    return(result);
 }
